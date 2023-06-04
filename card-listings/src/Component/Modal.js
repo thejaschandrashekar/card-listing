@@ -119,6 +119,7 @@ const Modal = ({ closeModal, editCardId = ''}) => {
                             <input
                                 type="text"
                                 name="title"
+                                required
                                 value={form.title}
                                 onChange={handleChange}
                             />
@@ -131,6 +132,7 @@ const Modal = ({ closeModal, editCardId = ''}) => {
                             <textarea className='form-textarea'
                              onChange={handleChange} 
                              name="description" 
+                             required
                              rows={4} cols={40}
                              value={form.description} />
                         </div>
@@ -156,6 +158,7 @@ const Modal = ({ closeModal, editCardId = ''}) => {
                                 isMulti
                                 name="genre"
                                 options={genreValue}
+                                required
                                 defaultValue={selectedGenre?.map((genre) => ({ value: genre, label: genre }))}
                                 onChange={handleGenre}
                             />
@@ -163,7 +166,7 @@ const Modal = ({ closeModal, editCardId = ''}) => {
 
                         <div>
                             <label>Image</label>
-                            <input type="file" name="image" accept="image/png, image/jpg" onChange={handleImageUpload} />
+                            <input type="file" name="image" required accept="image/png, image/jpg" onChange={handleImageUpload} />
                         </div>
 
 
