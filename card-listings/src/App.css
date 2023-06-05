@@ -226,3 +226,20 @@
   margin-top: 20px;
   border-radius: 5px;
 }
+
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  background-color: rgb(25,17,49);
+  font-weight: 500;
+  color: #FFFFFF;
+  width: 400px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(25,17,49) !important;
+  color: #FFFFFF !important;
+}

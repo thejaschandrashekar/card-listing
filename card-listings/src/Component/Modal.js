@@ -108,7 +108,7 @@ const Modal = ({ closeModal, editCardId = ''}) => {
     ]
 
     return (
-        <div className="w3-modal modal">
+        <div className="w3-modal modal w3-margin-bottom">
             <div className="w3-modal-content modal-content">
                 <div className="w3-container">
                     <button onClick={closeModal} className="w3-right">X</button>
@@ -170,7 +170,7 @@ const Modal = ({ closeModal, editCardId = ''}) => {
                         </div>
 
 
-                        <button type="submit">Add Card</button>
+                        <div className='submit-btn-container'><button className='w3-button submit-btn' type="submit">Add Card</button></div>
                     </form>
 
                 </div>
